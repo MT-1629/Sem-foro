@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Semáforo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+body{
+    background-image: url('img/Cruzamento.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.image{
+    position: absolute;
+    bottom: 35%;
+    right: 47%;
+}
+.amarelo{
+    background-color: yellow;
+    border: none;
+    color: black;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40%;
+    right: 55%;
+}
+.verde{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 53%;
+    right: 37%;
+}
+.vermelho{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 53%;
+    right: 55%;
+}
+.desligado{
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40%;
+    right: 35%;
+}
+    </style>
+</head>
+<body>
+    <button class="amarelo" type="button" onclick="document.getElementById('semáforo').src='img/semáforo amarelo.png'">Sinal amarelo</button>  
+    <button class="verde" type="button" onclick="document.getElementById('semáforo').src='img/semáforo verde.png'">Sinal Verde</button>
+    <button class="desligado" type="button" onclick="document.getElementById('semáforo').src='img/semáforo desligado.png'">Sinal Desligado</button>
+    <button class="vermelho" type="button" onclick="document.getElementById('semáforo').src='img/semáforo vermelho.png'">Sinal Vermelho</button>
+    <img class="image" id="semáforo" src="img/semáforo desligado.png" height="40%">
+</body>
+</html>
